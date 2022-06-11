@@ -24,11 +24,11 @@ const renderAvatar = (user) => {
     $('#welcome').html(`欢迎 ${name}`)
     if (user.user_pic !== null) {
         $('.layui-nav-img').attr('src', user.user_pic).show()
-        $('.text-avater').hide()
+        $('.text-avatar').hide()
     } else {
         $('.layui-nav-img').hide()
         let first = name[0].toUpperCase()
-        $('.text-avater').html(first).show()
+        $('.text-avatar').html(first)
     }
 }
 $('#btnLogout').click(() => {
