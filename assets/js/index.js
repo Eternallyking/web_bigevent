@@ -44,3 +44,6 @@ $('#btnLogout').click(() => {
     );
 })
 getUserInfo()
+function change(){
+    $('#change').addClass('layui-this').next().removeClass('layui-this')
+}
